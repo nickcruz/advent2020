@@ -3,5 +3,5 @@
 
 import Foundation
 
-print("Hello, World!")
+print("Hello, Advent of Code 2020!")
 
