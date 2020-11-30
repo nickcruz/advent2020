@@ -2,6 +2,14 @@
 // Copyright © 2020 Airbnb Inc. All rights reserved.
 
 import Foundation
+import ArgumentParser
 
-print("Hello, Advent of Code 2020!")
+struct Advent: ParsableCommand {
+    @Argument() var day: Int
 
+    func run() {
+        print("Day: \(day)")
+    }
+}
+
+Advent.main()
