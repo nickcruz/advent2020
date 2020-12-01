@@ -8,7 +8,13 @@ struct Advent: ParsableCommand {
     @Argument() var day: Int
 
     func run() {
-        print("Day: \(day)")
+      switch day {
+      case 1:
+        day1()
+        break
+      default:
+        print("Haven't completed this day yet.")
+      }
     }
 }
 
